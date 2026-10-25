@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | Property CRM</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="login-shell">
+      <section class="story-panel" aria-labelledby="story-title">
+        <a class="brand" href="/login"
+          ><span class="brand-icon" aria-hidden="true">P.</span>Property<span
+            class="brand-light"
+            >CRM</span
+          ></a
+        >
+        <div class="story-copy">
+          <span class="eyebrow">A LITTLE SPACE. BIG POSSIBILITIES.</span>
+          <h1 id="story-title">
+            Great properties.<br />Even better<br /><em>connections.</em>
+          </h1>
+          <p>
+            Bring your properties, leads and next<br />big opportunity together.
+          </p>
+        </div>
+        <div class="property-art" aria-hidden="true">
+          <div class="orbit"></div>
+          <div class="property-label">
+            <span class="status-dot"></span>Your next chapter starts here
+          </div>
+          <svg
+            class="house"
+            viewBox="0 0 500 330"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              cx="256"
+              cy="293"
+              rx="212"
+              ry="22"
+              fill="#9870CC"
+              opacity=".18"
+            />
+            <path d="M101 170V263L260 315V225L101 170Z" fill="#F5EEFF" />
+            <path d="M260 225L405 164V259L260 315V225Z" fill="#AB87DE" />
+            <path d="M83 171L236 98L419 165L260 236L83 171Z" fill="#EBDDFF" />
+            <path
+              d="M137 146V88L258 37L373 83V151L260 200L137 146Z"
+              fill="#F9F5FF"
+            />
+            <path d="M258 37L373 83V151L260 200L258 37Z" fill="#DAC3FA" />
+            <path
+              d="M126 88L256 29L385 79L372 91L257 48L140 101L126 88Z"
+              fill="#493163"
+            />
+            <path
+              d="M165 110L194 97V139L165 151V110ZM208 91L237 79V122L208 134V91Z"
+              fill="#9470BD"
+            />
+            <path d="M284 84L345 107V146L284 123V84Z" fill="#62457F" />
+            <path d="M314 96V135" stroke="#DAC3FA" stroke-width="5" />
+            <path d="M123 197L186 218V262L123 241V197Z" fill="#D6BCEF" />
+            <path d="M154 207V252" stroke="#F5EEFF" stroke-width="5" />
+            <path d="M210 226L240 236V306L210 296V226Z" fill="#70518E" />
+            <path d="M286 230L369 196V242L286 276V230Z" fill="#533A70" />
+            <path d="M326 213V259" stroke="#AB87DE" stroke-width="5" />
+            <path
+              d="M72 245V281M436 226V272"
+              stroke="#735592"
+              stroke-width="6"
+              stroke-linecap="round"
+            />
+            <circle cx="72" cy="230" r="24" fill="#9671BF" />
+            <circle cx="436" cy="210" r="28" fill="#8B66B5" />
+          </svg>
+          <div class="floating-note">
+            <span class="note-icon">&#10003;</span>
+            <div>Room to grow<small>Everything in one place</small></div>
+          </div>
+        </div>
+        <p class="panel-footer">&#10022; &nbsp; Built around your next move.</p>
+      </section>
+      <section class="form-panel" aria-labelledby="login-title">
+        <div class="top-note">YOUR PROPERTY WORKSPACE</div>
+        <div class="login-card">
+          <div class="welcome-icon" aria-hidden="true">&#10022;</div>
+          <span class="eyebrow form-eyebrow">LET'S GET YOU SETTLED</span>
+          <h2 id="login-title">Welcome back!</h2>
+          <p class="subtitle">
+            A fresh day. A new opportunity.<br />Sign in to your Property CRM.
+          </p>
+          <form id="login-form">
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="username"
+              required
+              maxlength="254"
+            /><label for="password">Password</label>
+            <div class="password-field">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+              /><button
+                id="toggle-password"
+                type="button"
+                aria-label="Show password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+            </div>
+            <p class="login-hint">
+              Use the email associated with your CRM account.
+            </p>
+            <button class="submit" type="submit">
+              Sign in <span aria-hidden="true">&#8594;</span>
+            </button>
+            <p id="message" role="status" aria-live="polite"></p>
+          </form>
+          <div class="account-links">
+            <a href="/reset-password">Reset password</a>
+            <p>Don't have an account? <a href="/register">Create account</a></p>
+          </div>
+        </div>
+        <p class="footer">Properties. People. Possibilities.</p>
+      </section>
+    </main>
+  </body>
+</html>

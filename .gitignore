@@ -1,0 +1,6 @@
+node_modules/
+frontend/dist/
+services/identity/data/
+*.log
+.env
+.codex/

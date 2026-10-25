@@ -1,0 +1,36 @@
+.admin-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  width: 100%;
+  min-height: 100dvh;
+  background: #f5f3f8;
+}
+
+.admin-sidebar {
+  padding: 24px;
+  background: #3c0c61;
+  color: #ffffff;
+}
+.admin-logo {
+  margin: 0 0 24px; /*  "top, right, bottom, left" */
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.admin-main {
+  min-width: 0;
+  padding: 32px;
+}
+.admin-main h1 {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 767px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-main {
+    padding: 20px;
+  }
+}

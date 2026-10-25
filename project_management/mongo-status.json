@@ -1,0 +1,64 @@
+{
+  "phase": "Connected — CRM now uses local MongoDB",
+  "steps": [
+    {
+      "title": "Local server checked",
+      "detail": "MongoDB 8.3.11 replied to ping on 127.0.0.1:27017.",
+      "state": "done"
+    },
+    {
+      "title": "Database name selected",
+      "detail": "cashflow_proptee — MongoDB database names cannot contain spaces.",
+      "state": "done"
+    },
+    {
+      "title": "Existing accounts checked",
+      "detail": "The previous SQLite database has 0 users. Original database file will remain intact.",
+      "state": "done"
+    },
+    {
+      "title": "Official driver installed",
+      "detail": "mongodb package added to D:\\CRM\\package.json. 0 audit vulnerabilities reported.",
+      "state": "done"
+    },
+    {
+      "title": "Identity connection",
+      "detail": "MongoDB persistence implemented. Reset uses one atomic user-document update.",
+      "state": "done"
+    },
+    {
+      "title": "Collections and indexes verified",
+      "detail": "users: unique email/reset hash. sessions: expiry TTL and user lookup. MongoDB listens on 127.0.0.1 only.",
+      "state": "done"
+    },
+    {
+      "title": "Testing MongoDB-backed authentication",
+      "detail": "4 existing auth tests + MongoDB integration test passed. Concurrent token use, expiry, session revocation and persistence verified.",
+      "state": "done"
+    },
+    {
+      "title": "Application switched to MongoDB",
+      "detail": "Identity service connects to cashflow_proptee before listening. Register page now saves accounts to MongoDB.",
+      "state": "done"
+    }
+  ],
+  "collections": [
+    {
+      "name": "users",
+      "count": 0
+    },
+    {
+      "name": "sessions",
+      "count": 0
+    }
+  ],
+  "files": [
+    "D:\\CRM\\services\\identity\\mongo-store.js",
+    "D:\\CRM\\services\\identity\\start.js",
+    "D:\\CRM\\project_management\\MONGODB.md",
+    "D:\\CRM\\services\\identity\\app.js",
+    "D:\\CRM\\services\\identity\\mongo.test.js",
+    "D:\\CRM\\scripts\\check-mongodb.js",
+    "D:\\CRM\\.env.example"
+  ]
+}
